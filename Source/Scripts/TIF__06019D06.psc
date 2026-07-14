@@ -17,6 +17,7 @@ Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
 Game.GetPlayer().RemoveItem(Statue, 1)
 Game.GetPlayer().AddItem(Gold, RewardAmount)
+GetOwningQuest().SetObjectiveCompleted(10)
 GetOwningQuest().SetStage(100)
 ;END CODE
 EndFunction
